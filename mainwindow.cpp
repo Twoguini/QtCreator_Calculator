@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QDebug>
+#include <QMessageBox>
 
 double calcVal = 0.0;
 bool divTrigger = false;
@@ -46,6 +47,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->Delete, SIGNAL(released()), this,
             SLOT(DeleteChar()));
+
+    connect(ui->Close, SIGNAL(released()), this,
+            SLOT(CloseApp()));
 }
 
 MainWindow::~MainWindow()
@@ -130,5 +134,19 @@ void MainWindow::DeleteChar(){
         ui->Display->setText("0");
     } else
         ui->Display->setText(displayVal.join(""));
+}
+
+void MainWindow::CloseApp(){
+    QMessageBox closeAskBox;
+    closeAskBox.setText("Você Realmente Deseja Fechar o Programa?");
+    QPushButton *yesBTN = closeAskBox.addButton(QMessageBox::Yes);
+    QPushButton *noBTN = closeAskBox.addButton(QMessageBox::No);
+    closeAskBox.setIcon(QMessageBox::Question);
+    closeAskBox.exec();
+    if (closeAskBox.clickedButton() == yesBTN){
+        close();
+    } else {
+        return;
+    }
 }
 

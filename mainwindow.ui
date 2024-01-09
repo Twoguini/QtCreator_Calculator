@@ -567,7 +567,43 @@
      </rect>
     </property>
     <property name="text">
-     <string>&lt;==</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>C:/Users/Twoguini/Downloads/icons8-delete-key-50.png</normaloff>C:/Users/Twoguini/Downloads/icons8-delete-key-50.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>260</width>
+      <height>260</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Close">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: red;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>C:/Users/Twoguini/Downloads/icons8-close-80.png</normaloff>C:/Users/Twoguini/Downloads/icons8-close-80.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
     </property>
    </widget>
   </widget>

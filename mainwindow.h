@@ -24,6 +24,7 @@ private slots:
     void ClearBTNPressed();
     void DotPressed();
     void DeleteChar();
+    void CloseApp();
 
 private:
     Ui::MainWindow *ui;
