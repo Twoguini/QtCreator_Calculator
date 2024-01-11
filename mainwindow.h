@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QJsonDocument>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,6 +26,7 @@ private slots:
     void DotPressed();
     void DeleteChar();
     void CloseApp();
+    QString ReadFile(QString name, int id);
 
 private:
     Ui::MainWindow *ui;

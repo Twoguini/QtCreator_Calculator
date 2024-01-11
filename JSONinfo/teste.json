@@ -1,0 +1,10 @@
+{
+	"Libraries":[
+		{
+			"Id": 1,
+			"Lib": "libdate.so",
+			"Path": "Path to Lib",
+			"Description": "Lib Description"
+		}
+	]
+}
